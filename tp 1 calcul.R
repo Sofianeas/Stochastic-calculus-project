@@ -27,8 +27,8 @@ mu=rbar/h+0.5*sr2/h
 sigm=sqrt(sr2/h)
 
 ###pour les donnees journalieres de cloture sur 6mois###
-r6=r[1:126]
-d6=d[1:126]
+r6=r[126:252]
+d6=d[126:252]
 plot(d6,type="l",main="block",xlab="block")
 ##les correlogrammes (ACF) de la serie r6 des rendements et du carre r6^2
 acf(r6)
@@ -51,8 +51,8 @@ mu6=rbar6/h+0.5*sr26/h
 sigm6=sqrt(sr26/h)
 
 ###pour les donnees journalieres de cloture sur 4mois###
-r4=r[1:84]
-d4=d[1:84]
+r4=r[168:252]
+d4=d[168:252]
 ##les correlogrammes (ACF) de la serie r4 des rendements et du carre r4^2
 plot(d4,type="l",main="block",xlab="block")
 acf(r4)
